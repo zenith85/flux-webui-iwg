@@ -176,5 +176,5 @@ with gr.Blocks(css=css) as demo:
         inputs = [prompt, checkpoint, seed, guidance_scale, num_images_per_prompt, randomize_seed, width, height, num_inference_steps],
         outputs = [result, seed]
     )
-demo.launch()
-
+#demo.launch()
+demo.launch(server_name='0.0.0.0', server_port=5860)
