@@ -151,4 +151,5 @@ with gr.Blocks() as demo:
 if __name__ == "__main__":
     #infer()  # Load model once at the start    
     load_model()
+    demo.queue()
     demo.launch(server_name='0.0.0.0', server_port=7860)
